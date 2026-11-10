@@ -220,10 +220,6 @@ curl http://localhost:3000/
 # {"message":"Welcome to BE API"}
 ```
 
-> ⚠️ `cross-env` is used by both scripts but is not listed in `dependencies`.
-> If `npm run start:dev` fails with `cross-env: not found`, install it:
-> `npm i -D cross-env`
-
 ---
 
 ## 🔑 Environment Variables
@@ -249,9 +245,6 @@ The config loader reads `.env.${NODE_ENV}` — so `.env.development` or `.env.pr
 | `ORIGINS` | Allowed CORS origins, comma-separated | `http://localhost:5173` |
 | `APP_EMAIL` | SMTP username / sender address | `you@gmail.com` |
 | `APP_PASSWORD` | SMTP password or app password | app password |
-
-> 🔒 **Never commit these files.** `.env.development` and `.env.production` are in `.gitignore`
-> for exactly this reason. Commit a `.env.example` with empty values instead.
 
 ---
 
